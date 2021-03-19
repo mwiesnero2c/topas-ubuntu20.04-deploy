@@ -5,5 +5,5 @@ RUN apt-get update && \
 RUN add-apt-repository universe
 RUN add-apt-repository ppa:inkscape.dev/stable
 RUN apt-get update && \
-    apt-get install -y inkscape python3 dpkg && \
+    apt-get install -y inkscape python3 python3-pip dpkg && \
     rm -rf /var/lib/apt/lists/*
